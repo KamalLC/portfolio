@@ -19,6 +19,10 @@
 	box-sizing: border-box;
 }
 
+.margin-unset{
+	margin: unset;
+}
+
 body{
 	background-color: var(--color-background);
 	/*background-color: red;*/
@@ -37,6 +41,16 @@ html{
 .img-responsive {
   max-width: 100%;
   height: auto;
+}
+
+.blog-card-img{
+	width: 100%;
+	height: 30rem;
+}
+
+.blog-post-img{
+	width: 100%;
+	height: 50rem;
 }
 
 /*General Styling Ends here*/
@@ -169,14 +183,17 @@ html{
 /*footer styling ends here*/
 
 /*blog styling starts here*/
-
-
+ 
+/*
 .blogs {
   display: flex;
   flex-direction: column;
   margin-bottom: 12rem;
-}
+}*/
 
+p{
+	text-align: justify;
+}
 .blog-title {
   font-family: var(--font-secondary);
   font-size: 1.8rem;
@@ -219,11 +236,13 @@ html{
 }
 
 .blog-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  gap: 10rem;
+  grid-gap: 10rem;
   padding-block: 10rem;
   border-bottom: 1.5px solid var(--color-grey);
+  margin-bottom: 7rem;
 } 
 
 .blog-card-text{
