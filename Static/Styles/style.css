@@ -399,7 +399,7 @@ input{
   }
 
   .footer .social-links{
-  	gap: 2rem;
+  	gap: 1.2rem;
   	justify-content: space-between;
   }
   .contact .column:nth-child(2) {
