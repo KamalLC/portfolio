@@ -124,7 +124,7 @@ html{
 }
 
 .hero .column:nth-child(1){
-	width: 60rem;
+	/*width: 60rem;*/
 }
 
 .hero .column h1{
@@ -331,8 +331,9 @@ input{
   .paragraph-primary{
     font-size: 2.4rem;
   }
-  .skills-section .flex-row{
-    gap: 4rem;
+  .skill .flex-row{
+    gap: unset;
+    align-items: start;
   }
   .contact .flex-row{
     gap: 2rem;
@@ -340,7 +341,7 @@ input{
   }
 
   .contact .column:nth-child(2){
-    text-align: end;
+    /*text-align: end;*/
   }
   .contact {
     margin-bottom: 6rem;
