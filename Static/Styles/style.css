@@ -124,7 +124,7 @@ html{
 }
 
 .hero .column:nth-child(1){
-	/*width: 60rem;*/
+	width: 60rem;
 }
 
 .hero .column h1{
@@ -295,7 +295,7 @@ input{
 	width: 100%;
 	height: 2.6rem;
 	background-color: #FFAB4C;
-	border-style=none;
+	border-style: none;
 }
 
 .contact .nav-logo{
@@ -341,13 +341,22 @@ input{
   }
 
   .contact .column:nth-child(2){
-    /*text-align: end;*/
+    text-align: unset;
   }
   .contact {
     margin-bottom: 6rem;
   }
   .footer{
     margin-bottom: 5rem;
+  }
+
+  .social-links{
+    gap: 10rem;
+  }
+
+  
+  .section-blogs{
+    margin-top: 7rem;
   }
 }
 
@@ -359,6 +368,10 @@ input{
   .nav {
     margin-block: 2rem;
   }
+  
+  .nav-links{
+    gap: 3rem;
+  }
   .heading-primary{
     font-size: 4rem;
   }
@@ -369,14 +382,18 @@ input{
     margin-bottom: 2rem;
   }
   .hero .column:nth-child(1){
-	width: unset;
-}
+  	width: unset;
+  }
+  
   .hero .paragraph-primary:not(:last-child) {
     margin-bottom: 2rem;
   }
   .hero {
     margin-block: 6rem;
 
+  }
+  .hero .column:nth-child(1){
+    width: unset;
   }
 
   .hero .flex-row{
@@ -405,12 +422,16 @@ input{
   .contact .column:nth-child(2) {
     text-align: start;
   }
+
+  .section-blogs{
+    margin-top: 3rem;
+  }
   .blog-card{
   	display: flex;
    flex-direction: column-reverse;
-  gap: 4rem;
-  padding-block: 6rem;
-  margin-bottom: 2rem;
+    gap: 4rem;
+    padding-block: 6rem;
+    margin-bottom: 2rem;
   }
   .blog-card-detail{
     flex-direction: column;
